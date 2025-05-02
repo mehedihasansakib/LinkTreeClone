@@ -1,0 +1,40 @@
+<%= stylesheet_link_tag "devise" %>
+
+<div class="devise-container">
+  <div class="devise-form">
+    <div class="form-header">
+      <h2>Create Your Account</h2>
+      <p class="subtitle">Join our community today</p>
+    </div>
+
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: "devise-form-content" }) do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
+
+      <div class="field">
+        <%= f.label :email, class: "form-label" %>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-input", placeholder: "Enter your email" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password, class: "form-label" %>
+        <%= f.password_field :password, autocomplete: "new-password", class: "form-input", placeholder: "Create a password" %>
+        <% if @minimum_password_length %>
+          <p class="hint">(<%= @minimum_password_length %> characters minimum)</p>
+        <% end %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password_confirmation, class: "form-label" %>
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-input", placeholder: "Confirm your password" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Sign Up", class: "form-submit" %>
+      </div>
+    <% end %>
+
+    <div class="devise-shared-links">
+      <p>Already have an account? <%= link_to "Log in", new_session_path(resource_name) %></p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,185 @@
+/* Base Styles */
+.devise-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    padding: 2rem;
+  }
+  
+  .devise-form {
+    width: 100%;
+    max-width: 450px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    padding: 2.5rem;
+    margin: 1rem;
+  }
+  
+  .form-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .form-header h2 {
+    color: #2d3748;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-header .subtitle {
+    color: #718096;
+    font-size: 0.95rem;
+  }
+  
+  /* Form Elements */
+  .form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #4a5568;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #f8fafc;
+  }
+  
+  .form-input:focus {
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+    outline: none;
+    background-color: #ffffff;
+  }
+  
+  .form-input::placeholder {
+    color: #a0aec0;
+  }
+  
+  /* Submit Button */
+  .form-submit {
+    width: 100%;
+    padding: 1rem;
+    background-color: #4299e1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .form-submit:hover {
+    background-color: #3182ce;
+    transform: translateY(-1px);
+  }
+  
+  /* Remember Me Checkbox */
+  .remember-me {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+  }
+  
+  .checkbox-input {
+    margin-right: 0.75rem;
+    width: 1.1rem;
+    height: 1.1rem;
+    accent-color: #4299e1;
+  }
+  
+  .checkbox-label {
+    color: #4a5568;
+    font-size: 0.95rem;
+  }
+  
+  /* Links */
+  .devise-shared-links {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  
+  .devise-shared-links a {
+    color: #4299e1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .devise-shared-links a:hover {
+    color: #3182ce;
+    text-decoration: underline;
+  }
+  
+  .devise-shared-links p {
+    color: #718096;
+    margin-top: 1rem;
+  }
+  
+  /* Error Messages */
+  #error_explanation {
+    color: #e53e3e;
+    background-color: #fff5f5;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #e53e3e;
+  }
+  
+  #error_explanation h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  #error_explanation ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    list-style-type: disc;
+  }
+  
+  /* Flash Messages */
+  .alert, .notice {
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .alert {
+    background-color: #fff5f5;
+    color: #e53e3e;
+    border-left: 4px solid #e53e3e;
+  }
+  
+  .notice {
+    background-color: #f0fff4;
+    color: #38a169;
+    border-left: 4px solid #38a169;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 576px) {
+    .devise-container {
+      padding: 1rem;
+    }
+    
+    .devise-form {
+      padding: 1.75rem;
+    }
+    
+    .form-header h2 {
+      font-size: 1.5rem;
+    }
+  }
