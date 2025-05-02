@@ -20,7 +20,7 @@ gem "jbuilder"
 # my custom gems
 
 gem "devise"
-gem "friendly_id", "~> 5.4.0"
+gem "friendly_id", "~> 5.5.1"
 
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 

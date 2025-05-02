@@ -109,7 +109,7 @@ GEM
       warden (~> 1.2.3)
     drb (2.2.1)
     erubi (1.13.1)
-    friendly_id (5.4.2)
+    friendly_id (5.5.1)
       activerecord (>= 4.0.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
@@ -311,7 +311,7 @@ DEPENDENCIES
   capybara
   debug
   devise
-  friendly_id (~> 5.4.0)
+  friendly_id (~> 5.5.1)
   importmap-rails
   jbuilder
   puma (>= 5.0)
